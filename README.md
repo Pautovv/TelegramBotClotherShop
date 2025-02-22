@@ -1,11 +1,8 @@
 For admins : /apanel - you call admin commands.
-(i dont want to do buttoms, becouse it will be very hard logic on my bot.)
+(i dont want to do buttoms, because it will be very hard logic on my bot.)
 
 Other commands for admins: /add_item and /newletter:
     1. We add new item to database.
     2. We do mailing for all users of bot.
-
-В данном репозитории лежит мой первый полноцценный телеграмм бот для продажи вещей. 
-Использован стек: aiogram3(для прописывания бизнес-логики бота), SQLalchemy(ORM для взаимодействия с базой данных), PostgreSQL(база данных)
-
+    
 ```pip install aiogram dotenv sqlalchemy```
