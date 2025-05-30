@@ -1,18 +1,27 @@
-<<<<<<< HEAD
-For admins : /apanel - you call admin commands.
-(i dont want to do buttoms, becouse it will be very hard logic on my bot.)
+## 1. **Введение**
 
-Other commands for admins: /add_item and /newletter:
-    1. We add new item to database.
-    2. We do mailing for all users of bot.
+В данном репозетории представлен Телеграмм бота выполняющий функции магизина по продаже вещей. **Цель** данного проекта была хорошо освоить новую библиотеку, а так же научиься создавать сложную логику для бота в телеграмме.
 
-=======
-For admins : /apanel - you call admin commands.
-(i dont want to do buttoms, because it will be very hard logic on my bot.)
+## 2. **Стэк технологий**
 
-Other commands for admins: /add_item and /newletter:
-    1. We add new item to database.
-    2. We do mailing for all users of bot.
-    
-```pip install aiogram dotenv sqlalchemy```
->>>>>>> 344b3540a90e3742af4972d60456081138819843
+* `aiogram` - основая библиотека для подключения логику к *telegram API*
+* `SQLAlchemy` - удобная *ORM* платформа для создания логики базы данных а так же написанию запросов к базе данных
+* `PostgreSQL` - сервер базы данных
+
+## 3. **Про бота**
+
+В данном боте существует функционал как для обычных пользователей, так и для администраторов магазина. У обычнх пользователей есть возможность посмотреть информацию про себя, нажав на кнопку `Profile`, а так же посмотреть ассортимент магазина при помощи кнопок `Catalog` и `Item`. 
+
+У администраторов (`/apanel`) есть возможность добавлять новый товар `/additem`, добавлять новую категорию товара `/addcategory`.
+
+Впринципе весь бот состоит из **inline-keyboardmarkups* потому что это удобно и красиво.
+
+## 4. **Развитие проекта в будущем**
+
+В будущем я планирую добавить вывод актуального курса валют с кнопки `rate` используя `FastAPI`, а так же добавить возможность рассылки администраторам. Возможно так же появление чата поддержки.
+
+## 5. **Запуск**
+
+```Python
+python run.py
+```
